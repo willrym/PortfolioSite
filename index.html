@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--
+	Dimension by HTML5 UP
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <title>Will Mosher Portfolio Site</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="logo">
+          <span class="icon fa-gem"></span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Will Mosher Portfolio</h1>
+            <p>Created to showcase my data projects, skills, and interests!</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#models">Program Models</a></li>
+            <li><a href="#sqldb">SQL/Database</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+
+            <!--<li><a href="#elements">Elements</a></li>-->
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- About Me -->
+        <article id="about">
+          <h2 class="major">About Me</h2>
+          <span class="image mainz"
+            ><img src="images/picMe.jpg" height="373" width="373" alt=""
+          /></span>
+          <p>
+            Welcome to my portfolio website! I'm thrilled to have you here. My
+            name is Will, and I am a data enthusiast with a strong passion for
+            data science, data analytics, and artificial intelligence/machine
+            learning. I thrive on uncovering meaningful insights from complex
+            datasets and leveraging them to drive informed decision-making. With
+            a knack for problem-solving, I am particularly drawn to the dynamic
+            fields of political consulting, education, and transportation, where
+            data-driven strategies can make a significant impact.
+          </p>
+          <p>
+            But it's not all about numbers for me. When I'm not immersed in
+            data, you can find me exploring my other passions. I have a love for
+            escape rooms, where I enjoy unraveling puzzles and testing my
+            problem-solving abilities in a team setting. On the court, I'm an
+            avid pickleball player, always seeking the perfect shot and enjoying
+            the competitive yet friendly atmosphere. And when I'm in the mood
+            for some mental stimulation, you'll likely find me at a trivia
+            night, showcasing my broad knowledge and embracing the thrill of
+            friendly competition. So, buckle up and join me on this exciting
+            journey as we combine professionalism, innovation, and a touch of
+            fun to achieve remarkable outcomes together!
+          </p>
+        </article>
+
+        <!-- Python/R Work -->
+        <article id="models">
+          <h2 class="major">Programming Models</h2>
+          <span class="image main"><img src="images/plane.jpg" alt="" /></span>
+          <p>
+            This project report on Indian Flight Pricing analyzes factors
+            influencing ticket prices and develops predictive models. The study
+            explores a dataset from six metro cities in India over 50 days,
+            implementing regression models such as Linear Regression, Decision
+            Tree, and Random Forest. The results highlight the importance of
+            seat class, flight duration, and days left until the flight in
+            determining ticket prices, providing valuable insights for airlines
+            and individuals in pricing strategies and travel planning.
+          </p>
+          <a href="project_files/Flight_Price_Report_FULL.zip" download
+            ><button>
+              <i class="fa fa-download"></i> Download Full Report
+            </button></a
+          >
+
+          <span class="image main"><img src="images/apt.webp" alt="" /></span>
+          <p>
+            This project report analyzes the Residential Apartment Price Factor
+            Data from Equity Residential, focusing on predicting the monthly
+            rent price based on various apartment characteristics. Three
+            regression models, namely K-Nearest Neighbor Regression, Linear
+            Regression, and Regression Tree, are employed to determine the best
+            model for price prediction. The significant variables affecting the
+            price are identified and their impact on the apartment price is
+            examined. Ultimately, this model can be used to find good value when
+            looking for apartments. Finding apartments with pricing lower than
+            what the model suggests implies a good deal!
+          </p>
+          <a href="project_files/Apt_Rent_Report_FULL.zip" download
+            ><button>
+              <i class="fa fa-download"></i> Download Full Report
+            </button></a
+          >
+        </article>
+
+        <!-- SQL and Database -->
+        <article id="sqldb">
+          <h2 class="major">SQL and Database</h2>
+          <span class="image main"
+            ><img src="images/wac2022.jpg" alt=""
+          /></span>
+          <p>
+            The report covers the organization of data for tracking individual
+            athletes' performances in various sports events. It includes an
+            Entity-Relationship Diagram (ERD) to visualize the database
+            structure. The report also provides implementation code for creating
+            and populating tables such as Athlete, Sport, Competition, Heat,
+            Performance, DistanceResult, and TimeResult. Additionally, it
+            presents SQL commands to retrieve specific information from the
+            database, such as listing event details on a specific date, counting
+            the number of events for men and women, finding the longest distance
+            in the Long Jump Women's event, displaying runner names, times, and
+            rankings in the 100M event, determining the count of athletes
+            participating in multiple events, and identifying the longest
+            distance in the Long Jump Women's event.
+          </p>
+          <a href="project_files/WAC 2022 DBMS project.pdf" download
+            ><button>
+              <i class="fa fa-download"></i> Download Full Report
+            </button></a
+          >
+        </article>
+
+        <!-- Contact -->
+        <article id="contact">
+          <h2 class="major">Contact</h2>
+          <form
+            method="post"
+            action="#"
+            onsubmit="sendEmail(); reset(); return false"
+          >
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <button type="button" onclick="sendEmail()">
+                  Send Message
+                </button>
+              </li>
+              <li><input type="reset" value="Reset" /></li>
+            </ul>
+          </form>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/will-mosher"
+                class="icon brands fa-linkedin"
+                ><span class="label">Twitter</span></a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/willyboyry"
+                class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script>
+            function sendEmail() {
+              Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "wmosher39@gmail.com",
+                Password: "BBD91719A4CB7CB36613049471CD4557255E",
+                To: "wmosher39@gmail.com",
+                From: document.getElementById("email"),
+                value,
+                Subject: "Contact Form Inquiry",
+                Body:
+                  "Name: " +
+                  document.getElementById("name").value +
+                  "<br> Email: " +
+                  document.getElementById("email").value +
+                  "<br> Message: " +
+                  docuemtn.getElementById("message").value,
+              }).then((message) => alert("Message sent succesfully!"));
+            }
+          </script>
+        </article>
+
+        <!-- Elements -->
+        <article id="elements">
+          <h2 class="major">Elements</h2>
+
+          <section>
+            <h3 class="major">Text</h3>
+            <p>
+              This is <b>bold</b> and this is <strong>strong</strong>. This is
+              <i>italic</i> and this is <em>emphasized</em>. This is
+              <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+              This is <u>underlined</u> and this is code:
+              <code>for (;;) { ... }</code>. Finally,
+              <a href="#">this is a link</a>.
+            </p>
+            <hr />
+            <h2>Heading Level 2</h2>
+            <h3>Heading Level 3</h3>
+            <h4>Heading Level 4</h4>
+            <h5>Heading Level 5</h5>
+            <h6>Heading Level 6</h6>
+            <hr />
+            <h4>Blockquote</h4>
+            <blockquote>
+              Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+              sagittis eget tempus euismod. Vestibulum ante ipsum primis in
+              faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+              ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in
+              faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
+            </blockquote>
+            <h4>Preformatted</h4>
+            <pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+          </section>
+
+          <section>
+            <h3 class="major">Lists</h3>
+
+            <h4>Unordered</h4>
+            <ul>
+              <li>Dolor pulvinar etiam.</li>
+              <li>Sagittis adipiscing.</li>
+              <li>Felis enim feugiat.</li>
+            </ul>
+
+            <h4>Alternate</h4>
+            <ul class="alt">
+              <li>Dolor pulvinar etiam.</li>
+              <li>Sagittis adipiscing.</li>
+              <li>Felis enim feugiat.</li>
+            </ul>
+
+            <h4>Ordered</h4>
+            <ol>
+              <li>Dolor pulvinar etiam.</li>
+              <li>Etiam vel felis viverra.</li>
+              <li>Felis enim feugiat.</li>
+              <li>Dolor pulvinar etiam.</li>
+              <li>Etiam vel felis lorem.</li>
+              <li>Felis enim et feugiat.</li>
+            </ol>
+            <h4>Icons</h4>
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-github"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+            </ul>
+
+            <h4>Actions</h4>
+            <ul class="actions">
+              <li><a href="#" class="button primary">Default</a></li>
+              <li><a href="#" class="button">Default</a></li>
+            </ul>
+            <ul class="actions stacked">
+              <li><a href="#" class="button primary">Default</a></li>
+              <li><a href="#" class="button">Default</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="major">Table</h3>
+            <h4>Default</h4>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Item One</td>
+                    <td>Ante turpis integer aliquet porttitor.</td>
+                    <td>29.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Two</td>
+                    <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                    <td>19.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Three</td>
+                    <td>Morbi faucibus arcu accumsan lorem.</td>
+                    <td>29.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Four</td>
+                    <td>Vitae integer tempus condimentum.</td>
+                    <td>19.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Five</td>
+                    <td>Ante turpis integer aliquet porttitor.</td>
+                    <td>29.99</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2"></td>
+                    <td>100.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <h4>Alternate</h4>
+            <div class="table-wrapper">
+              <table class="alt">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Item One</td>
+                    <td>Ante turpis integer aliquet porttitor.</td>
+                    <td>29.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Two</td>
+                    <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                    <td>19.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Three</td>
+                    <td>Morbi faucibus arcu accumsan lorem.</td>
+                    <td>29.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Four</td>
+                    <td>Vitae integer tempus condimentum.</td>
+                    <td>19.99</td>
+                  </tr>
+                  <tr>
+                    <td>Item Five</td>
+                    <td>Ante turpis integer aliquet porttitor.</td>
+                    <td>29.99</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2"></td>
+                    <td>100.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h3 class="major">Buttons</h3>
+            <ul class="actions">
+              <li><a href="#" class="button primary">Primary</a></li>
+              <li><a href="#" class="button">Default</a></li>
+            </ul>
+            <ul class="actions">
+              <li><a href="#" class="button">Default</a></li>
+              <li><a href="#" class="button small">Small</a></li>
+            </ul>
+            <ul class="actions">
+              <li>
+                <a href="#" class="button primary icon solid fa-download"
+                  >Icon</a
+                >
+              </li>
+              <li>
+                <a href="#" class="button icon solid fa-download">Icon</a>
+              </li>
+            </ul>
+            <ul class="actions">
+              <li><span class="button primary disabled">Disabled</span></li>
+              <li><span class="button disabled">Disabled</span></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="major">Form</h3>
+            <form method="post" action="#">
+              <div class="fields">
+                <div class="field half">
+                  <label for="demo-name">Name</label>
+                  <input
+                    type="text"
+                    name="demo-name"
+                    id="demo-name"
+                    value=""
+                    placeholder="Jane Doe"
+                  />
+                </div>
+                <div class="field half">
+                  <label for="demo-email">Email</label>
+                  <input
+                    type="email"
+                    name="demo-email"
+                    id="demo-email"
+                    value=""
+                    placeholder="jane@untitled.tld"
+                  />
+                </div>
+                <div class="field">
+                  <label for="demo-category">Category</label>
+                  <select name="demo-category" id="demo-category">
+                    <option value="">-</option>
+                    <option value="1">Manufacturing</option>
+                    <option value="1">Shipping</option>
+                    <option value="1">Administration</option>
+                    <option value="1">Human Resources</option>
+                  </select>
+                </div>
+                <div class="field half">
+                  <input
+                    type="radio"
+                    id="demo-priority-low"
+                    name="demo-priority"
+                    checked
+                  />
+                  <label for="demo-priority-low">Low</label>
+                </div>
+                <div class="field half">
+                  <input
+                    type="radio"
+                    id="demo-priority-high"
+                    name="demo-priority"
+                  />
+                  <label for="demo-priority-high">High</label>
+                </div>
+                <div class="field half">
+                  <input type="checkbox" id="demo-copy" name="demo-copy" />
+                  <label for="demo-copy">Email me a copy</label>
+                </div>
+                <div class="field half">
+                  <input
+                    type="checkbox"
+                    id="demo-human"
+                    name="demo-human"
+                    checked
+                  />
+                  <label for="demo-human">Not a robot</label>
+                </div>
+                <div class="field">
+                  <label for="demo-message">Message</label>
+                  <textarea
+                    name="demo-message"
+                    id="demo-message"
+                    placeholder="Enter your message"
+                    rows="6"
+                  ></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li>
+                  <input type="submit" value="Send Message" class="primary" />
+                </li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+            </form>
+          </section>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/will-mosher"
+              class="icon brands fa-linkedin"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/willyboyry"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <a href="https://calendly.com/wmosher1/intro"
+            ><button>
+              <i class="glyphicon glyphicon-user"></i> Meet with Me!
+            </button></a
+          >
+        </ul>
+
+        <p class="copyright">&copy; <em>Will Mosher</em></p>
+      </footer>
+    </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
